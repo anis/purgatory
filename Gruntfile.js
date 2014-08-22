@@ -94,15 +94,15 @@ module.exports = function(grunt) {
         watch : {
             css : {
                 files : ['./src/css/*.less'],
-                tasks : ['less:dev']
+                tasks : ['cssBuild']
             },
             js : {
                 files : ['./src/js/purgatory/**/*.js', './src/js/main.js'],
-                tasks : ['concat_in_order:js']
+                tasks : ['jsBuild', 'doc']
             },
-            doc : {
-                files : ['./src/js/purgatory/**/*.js', './src/js/main.js'],
-                tasks : ['doc']
+            html : {
+                files : ['./src/index.html'],
+                tasks : ['copy:html']
             }
         }
     });
