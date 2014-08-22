@@ -1,0 +1,4 @@
+node_modules
+dst
+src/css/style.css
+src/js/main.min.js

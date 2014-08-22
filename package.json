@@ -1,0 +1,28 @@
+{
+  "author": "Anis Safine <anis@safine.me> (http://anis.pro)",
+  "name": "purgatory",
+  "description": "A single-page application that calculates for you the remaining time before your next holidays.",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anis/purgatory.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concat-in-order": "^0.1.6",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsdoc": "^0.6.0",
+    "jit-grunt": "^0.8.0",
+    "time-grunt": "^0.4.0"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
