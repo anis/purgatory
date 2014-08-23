@@ -40,7 +40,9 @@
          * @returns {number} Remaining time, in milliseconds
          */
         this.getRemainingTime = function () {
-            var split = Date.prototype.splitDuration(+(that.getDate()) - (new Date()));
+            var split = Date.prototype.splitDuration(
+                Math.max(+(that.getDate()) - (new Date()), 0)
+            );
             return split.days + ' jours ' + split.hours + ' heures ' + split.minutes + ' minutes et ' + split.seconds + ' secondes'; 
         };
     };
