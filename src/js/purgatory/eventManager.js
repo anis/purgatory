@@ -30,6 +30,13 @@
         var events = [];
 
         /*
+         * Countdown interval
+         *
+         * @type {?Interval}
+         */
+        var countdownInterval = null;
+
+        /*
          * Events container
          *
          * @type {HTMLElement}
@@ -78,6 +85,11 @@
             // Create a new entry for each event
             for (var i = 0; i < events.length; i++) {
                 container.appendChild(createArticle(events[i]));
+            }
+
+            // Start the countdown
+            if (countdownInterval === null) {
+                countdownInterval = setInterval(that.build, 1000);
             }
 
             return that;
