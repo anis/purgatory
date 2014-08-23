@@ -15,7 +15,7 @@
      * @returns {SplitDuration}
      */
     Date.prototype.splitDuration = function(duration) {
-        duration = (duration / 1000) >> 0;
+        duration = (Math.abs(duration) / 1000) >> 0;
 
         // Seconds
         var result = {
